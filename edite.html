@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TODO List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+    body{
+        padding-bottom: 10px;
+
+      }
+
+    header, section, hr {
+      margin: 2% 5%;
+    }
+    
+    .subheader {
+      color: gray;
+    }
+
+    #no-resize{
+    background-color: white;
+    resize: none; 
+
+
+    }
+    
+    
+  </style>
+</head>
+<body>
+  
+
+    <nav role="navigation" class="navbar navbar-default">
+ <!-- mobile ansicht -->
+
+        <div class="navbar-header">
+
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+			
+            <a href="#" class="navbar-brand">Programmierpraktikum </a>
+
+        </div>
+
+       
+     <!-- alle Navitems-->
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="index.html">Übersicht</a></li>
+
+                <li><a href="create.html">TODO erstellen</a></li>
+
+                <li><a href="#">Impressum</a></li>
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+	<header>
+  <div class="row">
+  
+    <div class="col-xs-8 col-sm-6"><h1>TODO - Edit Task</h1></div> <button class="col-xs-offset-2 ol-xs-1 col-sm-offset-4 col-sm-1 btn btn-primary btn-lg" type="submit" style="margin-top:15px;">
+        back</button>
+
+    <div class="hidden-xs col-sm-12" ><p class="subheader">Diese Seite gibt Ihnen einen Überblick über allen Funktionalitäten, die bei der Bearbeitung der TODO´s möglich sind. Hierbei stehen neben den normalen Beschreibungen auch die Bearbeitung von Datum und Meilensteinen, die dazu dienen den Status zu berechnen. Zusätzlich können hier die Meilensteine abgehakt werden.</p></div>
+  </div>
+  </header>
+
+
+<section>
+  <form>
+  <fieldset class="form-group">
+     <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label">Aufgabe: </label>
+     <label class="col-xs-12  col-sm-8 control-label">Hausaufgabe Programmierpraktikum</label>
+
+    <small class="col-xs-12 col-sm-offset-4 col-sm-6 text-muted" >Nicht mehr veränderbar</small>
+    
+    <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label" >Beschreibung</label>
+    <div class="col-xs-12 col-sm-6">
+    <textarea class="form-control" id="no-resize" rows="3" readonly style="margin-top: 2%;">Überblick über allen Funktionalitäten, die bei der Bearbeitung der TODO´s möglich sind. Hierbei stehen neben den normalen Beschreibungen auch die Bearbeitung von Datum und Meilensteinen, die dazu dienen den Status zu berechnen. Zusätzlich können hier die Meilensteine abgehakt werd </textarea>
+    </div>
+
+    <div class="clearfix visible-xs-block"></div>
+    
+    <small class="col-xs-12 col-sm-offset-4 col-sm-6 text-muted">Nicht mehr veränderbar</small>
+
+  </fieldset>
+<fieldset class="form-group">
+    <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label" >Datum: </label>
+     
+    <div class="col-xs-12 col-sm-6">
+      <div class="input-group date" id="datetimepicker">
+           <input type="text" class="form-control" placeholder="12. März 2016" value="12. April 2016"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+       </div>
+    </div>
+</fieldset>
+
+<fieldset class="form-group">
+     <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label" >Meilenstein: </label>
+      <div class="col-xs-6 col-sm-4">
+       <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Meilenstein...">
+      </div>
+       <div class="col-xs-6 col-sm-offset-1 col-sm-2">
+      <button class="btn btn-success" type="submit">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+        </div>
+
+    <small class="col-xs-12 col-sm-offset-4 col-sm-6 text-muted" style="margin-bottom: 15px;">Bitte wähle einen einprägsamen Namen</small>
+    <div class="clearfix visible-xs-block"></div>
+
+    <label class="col-xs-6 col-sm-offset-2 col-sm-2 control-label" >Stufe:</label>
+    <div class="col-xs-2 col-sm-1">
+      <label class="radio-inline"><input type="radio" name="optradio">1</label>  
+    </div>
+
+    <div class="col-xs-2 col-sm-1">
+      <label class="radio-inline"><input type="radio" name="optradio">2</label>
+    </div>
+
+    <div class="col-xs-2 col-sm-1">
+      <label class="radio-inline"><input type="radio" name="optradio">3</label>
+    </div>
+
+    <div class="col-xs-2 col-sm-1">
+      <label class="radio-inline"><input type="radio" name="optradio">4</label>
+    </div>
+
+    <div class="col-xs-2 col-sm-1">
+      <label class="radio-inline"><input type="radio" name="optradio">5</label>
+    </div>
+
+    <div class="col-xs-2 col-sm-1">
+      <label class="radio-inline"><input type="radio" name="optradio">6</label>
+    </div>
+
+</fieldset>
+</form>
+</section>
+
+<section>
+  
+
+</section>
+
+<!-- Tabelle mit allen Meilensteinen -->
+<section>
+<div class="col-xs-12 col-sm-offset-2 col-sm-8 table-responsive">
+<table class="table">
+    <thead>
+      <tr>
+        <th class="col-xs-2 col-sm-offset-1 col-sm-2">Nummer</th>
+        <th class="col-xs-5 col-sm-offset-1 col-sm-3">Meilenstein</th>
+        <th class="col-xs-3 col-sm-2">Status</th>
+        <th class="col-xs-2 col-sm-1"></th>
+        
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Impressum</td>
+        <td>
+        <div class="hidden-xs btn-group" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+
+        <div class="visible-xs btn-group btn-group-sm" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+        </td>
+        <td><button class="btn btn-danger" type="submit">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Create</td>
+        <td>
+        <div class="hidden-xs btn-group" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+
+        <div class="visible-xs btn-group btn-group-sm" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+        </td>
+        <td><button class="btn btn-danger" type="submit">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>home</td>
+        <td>
+        <div class="hidden-xs btn-group" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+
+        <div class="visible-xs btn-group btn-group-sm" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+        </td>
+        <td><button class="btn btn-danger" type="submit">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </td>
+      </tr>    
+            <tr>
+        <td>4</td>
+        <td>Create Site</td>
+        <td>
+        <div class="hidden-xs btn-group" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+
+        <div class="visible-xs btn-group btn-group-sm" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+        </td>
+        <td><button class="btn btn-danger" type="submit">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </td>
+      </tr>
+            <tr>
+        <td>5</td>
+        <td>Upload on Github</td>
+        <td>
+        <div class="hidden-xs btn-group" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+
+        <div class="visible-xs btn-group btn-group-sm" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+        </td>
+        <td><button class="btn btn-danger" type="submit">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </td>
+      </tr> 
+            <tr>
+        <td>6</td>
+        <td>create Github</td>
+        <td>
+        <div class="hidden-xs btn-group" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+
+        <div class="visible-xs btn-group btn-group-sm" role="group">
+          
+        <button type="button" class="btn btn-warning">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+
+        </div>
+        </td>
+        <td><button class="btn btn-danger" type="submit">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        </td>
+      </tr>           
+        </tbody>
+
+</table>
+</section>
+
+<button class="col-xs-offset-6 ol-xs-6 col-sm-offset-6 col-sm-1 btn btn-success btn-lg" type="submit" style="margin-bottom: 20px;">
+        save</button>
+
+
+
+
+</body>
+	
+</html>

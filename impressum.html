@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TODO List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+  body{
+        padding-bottom: 30px;
+
+      }
+      
+    header, section, hr {
+      margin: 2% 5%;
+    }
+    
+    .subheader {
+      color: gray;
+    }
+
+    #no-resize{
+      
+  resize: none; 
+
+
+
+    }
+    
+    
+  </style>
+</head>
+<body>
+  
+
+    <nav role="navigation" class="navbar navbar-default">
+ <!-- mobile ansicht -->
+
+        <div class="navbar-header">
+
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+      
+            <a href="#" class="navbar-brand">Programmierpraktikum </a>
+
+        </div>
+     <!-- alle Navitems-->
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="index.html">Übersicht</a></li>
+
+                <li><a href="create.html">TODO erstellen</a></li>
+
+                <li class="active" ><a href="impressum.html">Impressum</a></li>
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+  <header>
+  <div class="row">
+  
+    <div class="col-xs-12 col-sm-12"><h1>TODO - Impressum</h1></div>
+ 
+  </div>
+  </header>
+  
+  <!-- Ansprechpartner-->
+  
+<section>
+      <div class="row">
+
+      <h2 class="col-sm-offset-2 col-xs-12 col-sm-10">
+      Ansprechpartner
+      </h2>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10"><strong>Sebastian Frost</strong></p>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10" style="margin-top: -12px;">Wirtschaftsinformatik</p>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10" style="margin-top: -12px;">Auerbachstr. 12</p>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10" style="margin-top: -12px;">123456 Auerbach</p>
+      </div>
+</section>
+
+<hr/>
+<!-- Kontaktformular -->
+<section>
+<div class="row">
+
+  <form>
+  <fieldset class="form-group">
+  <h2 class="col-sm-offset-2 col-xs-12 col-sm-12">Kontakt</h2>
+     <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label">E-Mail: </label>
+      <div class="col-xs-12 col-sm-6">
+       <input type="email" class="form-control"  placeholder="E-Mail">
+    </div>
+
+    <div class="clearfix visible-xs-block"></div>
+    
+    <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label" style="margin-top: 10px;">Betreff: </label>
+      <div class=" col-xs-12 col-sm-6" style="margin-top: 10px;">
+       <input type="email" class="form-control"  placeholder="Betreff">
+    </div>
+
+
+ </fieldset>
+  <fieldset class="form-group">
+    <div class="col-xs-12 col-sm-offset-4 col-sm-6">
+    <textarea class="form-control" id="no-resize" rows="3"></textarea>
+    </div>
+
+    <div class="clearfix visible-xs-block"></div>
+    
+    <small class="col-xs-12 col-sm-offset-4 col-sm-6 text-muted">Sie haben noch XX Wörter zur Verfügung</small>
+
+  </fieldset>
+  <button class="col-xs-offset-6 ol-xs-6 col-sm-offset-6 col-sm-1 btn btn-success btn-lg" type="submit" style="margin-bottom: 20px;">
+        send</button>
+</form>
+</div>
+</section>
+
+
+
+</body>
+  
+</html>
