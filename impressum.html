@@ -1,0 +1,87 @@
+
+  <header>
+  <div class="row">
+  
+    <div class="col-xs-12 col-sm-12"><h1>TODO - Impressum</h1></div>
+ 
+  </div>
+  </header>
+  
+  <!-- Ansprechpartner-->
+  
+<section>
+      <div class="row">
+
+      <h2 class="col-sm-offset-2 col-xs-12 col-sm-10">
+      Ansprechpartner
+      </h2>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10"><strong>Sebastian Frost</strong></p>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10" style="margin-top: -12px;">Wirtschaftsinformatik</p>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10" style="margin-top: -12px;">Auerbachstr. 12</p>
+      <p class="col-sm-offset-2 col-xs-12 col-sm-10" style="margin-top: -12px;">123456 Auerbach</p>
+      </div>
+</section>
+
+<hr/>
+<!-- Kontaktformular -->
+<section>
+<div class="row">
+
+  <form>
+  <fieldset class="form-group">
+  <h2 class="col-sm-offset-2 col-xs-12 col-sm-12">Kontakt</h2>
+     <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label">E-Mail: </label>
+      <div class="col-xs-12 col-sm-6">
+       <input type="email" class="form-control" placeholder="E-Mail" ng-model="email.text" required>
+    </div>
+
+    <div class="clearfix visible-xs-block"></div>
+    
+    <label class="col-xs-12 col-sm-offset-2 col-sm-2 control-label" style="margin-top: 10px;">Betreff: </label>
+      <div class=" col-xs-12 col-sm-6" style="margin-top: 10px;">
+       <input type="text" class="form-control" ng-model="subjectText"  placeholder="Betreff">
+    </div>
+
+
+ </fieldset>
+  <fieldset class="form-group">
+    <div class="col-xs-12 col-sm-offset-4 col-sm-6">
+    <textarea class="form-control" id="no-resize" ng-model="text" rows="3"></textarea>
+    </div>
+
+    <div class="clearfix visible-xs-block"></div>
+    
+    <small class="col-xs-12 col-sm-offset-4 col-sm-6 text-muted">Sie haben noch XX Wörter zur Verfügung</small>
+
+  </fieldset>
+  <div class="container">
+  
+<button class="col-xs-offset-6 ol-xs-6 col-sm-offset-6 col-sm-1 btn btn-success btn-lg" type="button" style="margin-bottom: 20px;" ng-click="sendMail()" data-toggle="modal" data-target="#myModal">
+        send</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Send</h4>
+        </div>
+        <div class="modal-body">
+          <p>E-Mail sent/p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+</form>
+</div>
+</section>
